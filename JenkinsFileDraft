@@ -1,5 +1,5 @@
 node {
-    def rootDir = PATH
+   // def rootDir = PATH
     def exampleModule = load "./pipeline.Groovy "
     exampleModule.greetMsg()
 }
