@@ -1,8 +1,8 @@
-node {
+//node {
    // def rootDir = PATH
-    def exampleModule = load "./pipeline.groovy"
-    exampleModule.greetMsg()
-}
+  //  def exampleModule = load "./pipeline.groovy"
+    //exampleModule.greetMsg()
+//}
 pipeline {
     agent any
 
@@ -24,4 +24,9 @@ pipeline {
             }
         }
     }
+}
+node {
+   // def rootDir = PATH
+    def exampleModule = load "./pipeline.groovy"
+    exampleModule.greetMsg()
 }
