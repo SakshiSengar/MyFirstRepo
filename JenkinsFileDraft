@@ -1,6 +1,6 @@
 node {
    // def rootDir = PATH
-    def exampleModule = load "./TestScript.groovy"
+    def exampleModule = load "./pipeline.groovy"
     exampleModule.greetMsg()
 }
 pipeline {
