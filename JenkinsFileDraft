@@ -27,6 +27,6 @@ pipeline {
 }
 node {
    // def rootDir = PATH
-    def exampleModule = load "./pipeline.groovy"
+    def exampleModule = load "./TestScript.groovy"
     exampleModule.greetMsg()
 }
