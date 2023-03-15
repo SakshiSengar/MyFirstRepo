@@ -25,8 +25,11 @@ pipeline {
         }
     }
 }
-node {
+//node {
    // def rootDir = PATH
-    def exampleModule = load "./TestScript.groovy"
-  //  exampleModule.greetMsg()
+ //   def exampleModule = load "./TestScript.groovy"
+//}
+node {
+   
+    def exampleModule = load "./RegressionsTestResultScript.groovy"
 }
