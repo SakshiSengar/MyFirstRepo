@@ -1,5 +1,4 @@
 import groovy.json.JsonSlurper
-def convert(){
     def inputFile = new File(".\regressiontestresults.json")
 def InputJSON = new JsonSlurper().parseText(inputFile.text)
 def writer = new StringWriter() // html is written here by markup builder
@@ -66,6 +65,5 @@ markup.html {
    def newFile = new File("./regressiontestresults.html")
    newFile.write(writer.toString())
 
-}
 }
 return this
