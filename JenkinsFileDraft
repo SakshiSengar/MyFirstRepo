@@ -28,5 +28,5 @@ pipeline {
 node {
    // def rootDir = PATH
     def exampleModule = load "./TestScript.groovy"
-    exampleModule.greetMsg()
+  //  exampleModule.greetMsg()
 }
