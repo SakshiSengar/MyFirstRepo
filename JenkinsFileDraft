@@ -1,8 +1,3 @@
-//node {
-   // def rootDir = PATH
-  //  def exampleModule = load "./pipeline.groovy"
-    //exampleModule.greetMsg()
-//}
 pipeline {
     agent any
 
@@ -25,10 +20,15 @@ pipeline {
         }
     }
 }
-node {
-   // def rootDir = PATH
-    def exampleModule = load "./TestScript.groovy"
-}
 //node {
-  //  def exampleModule = load "./RegressionsTestResultScript.groovy"
+   // def rootDir = PATH
+  //  def exampleModule = load "./pipeline.groovy"
+    //exampleModule.greetMsg()
 //}
+//node {
+   // def rootDir = PATH
+ //   def exampleModule = load "./TestScript.groovy"
+//}
+node {
+    def exampleModule = load "./RegressionsTestResultScript.groovy"
+   }
