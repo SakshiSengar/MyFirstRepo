@@ -1,0 +1,38 @@
+[
+  "Results": [
+    {
+      "Failed":"13",
+      "Passed":"45",
+      "ProductBuild":"8.3.0-134",
+      "Profile":"TeamASeleniumConfidenceTests.groovy",
+      "DateTime":"2019-07-01T21:14:25.000Z",
+      "ResultsURL":"https://hostname:9090/job/build-8.3.0-133/57/",
+      "Skipped":"0",
+      "ToolRunner":"Selenium",
+      "TotalTests":"58",
+      "DateTimeValue":[
+        "2019-07-02T12:36:27.304Z"
+        ]
+      ,"pyTextValue":[
+        "TEAM A"]  
+    }]
+,
+ "Results": [
+    {
+      "Failed":"13",
+      "Passed":"45",
+      "ProductBuild":"8.3.0-134",
+      "Profile":"TeamBSeleniumConfidenceTests.groovy",
+      "DateTime":"2019-07-01T21:14:25.000Z",
+      "ResultsURL":"https://hostname:9090/job/build-8.3.0-133/57/",
+      "Skipped":"0",
+      "ToolRunner":"Selenium",
+      "TotalTests":"58",
+      "DateTimeValue":[
+        "2019-07-02T12:36:27.304Z"
+        ]
+      ,"pyTextValue":[
+        "TEAM B"]  
+    }]
+,
+]
