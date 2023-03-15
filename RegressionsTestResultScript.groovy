@@ -67,3 +67,4 @@ markup.html {
    }
    def newFile = new File("./regressiontestresults.html")
    newFile.write(writer.toString())
+return this
