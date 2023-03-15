@@ -8,14 +8,12 @@ String id1 = InputJSON.get("Results")
 def id2 = InputJSON.get("Results")
 markup.html {
   head {
-   style(type: "text/css", ''
-    '
+   style(type: "text/css", '''
     .failedtest {
      color: red;
      text - align: center;
     }
-    ''
-    ')
+    ''')
    }
    markup.body {
     p "Hi All,"
@@ -68,5 +66,6 @@ markup.html {
    def newFile = new File("./regressiontestresults.html")
    newFile.write(writer.toString())
 
+}
 }
 return this
