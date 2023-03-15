@@ -1,3 +1,8 @@
+node {
+    def rootDir = pwd()
+    def exampleModule = load "${rootDir}@script/pipeline.Groovy "
+    exampleModule.greetMsg()
+}
 pipeline {
     agent any
 
@@ -7,13 +12,10 @@ pipeline {
               echo 'Building..'
             }
         }
-        stage('Load') {
-            code = load 'pipeline.groovy'
-             }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                exampleModule.greetMsg() 
+              //  exampleModule.greetMsg() 
             }
         }
         stage('Deploy') {
