@@ -1,6 +1,6 @@
 node {
-    def rootDir = pwd()
-    def exampleModule = load "${rootDir}@script/pipeline.Groovy "
+    def rootDir = PATH
+    def exampleModule = load "${rootDir}/pipeline.Groovy "
     exampleModule.greetMsg()
 }
 pipeline {
