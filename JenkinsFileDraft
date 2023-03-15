@@ -29,4 +29,5 @@ node {
    // def rootDir = PATH
     def exampleModule = load "./pipeline.groovy"
     exampleModule.greetMsg()
+     assert exampleModule.divide(12, 3) instanceof BigDecimal
 }
