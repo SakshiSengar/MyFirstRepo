@@ -10,6 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+              //  exampleModule.greetMsg() 
             }
         }
         stage('Deploy') {
@@ -19,3 +20,16 @@ pipeline {
         }
     }
 }
+//node {
+   // def rootDir = PATH
+  //  def exampleModule = load "./pipeline.groovy"
+    //exampleModule.greetMsg()
+//}
+//node {
+   // def rootDir = PATH
+ //   def exampleModule = load "./TestScript.groovy"
+//}
+node {
+    def exampleModule = load "./RegressionsTestResultScript.groovy"
+  //  exampleModule.convert()
+   }
