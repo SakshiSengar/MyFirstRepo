@@ -39,7 +39,7 @@ pipeline {
 //}
 node {
     def regressionJsonLoading = load "./regressiontestresults.json"
-    def exampleModule = load "./RegressionsTestResultScript.groovy"
+   // def exampleModule = load "./RegressionsTestResultScript.groovy"
  //   def regressionJsonLoading = load "./regressiontestresults.json"
   //  exampleModule.convert()
    }
