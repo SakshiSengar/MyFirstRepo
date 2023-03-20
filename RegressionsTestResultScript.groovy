@@ -1,7 +1,8 @@
 import groovy.json.JsonSlurper
 
      println("Before creating a jsonfile")
-    def inputFile = new File("\regressiontestresults.json")
+  //  def inputFile = new File("\regressiontestresults.json")
+def inputFile = new File("\updatedregressiontestresults.json")
     println("After creating a jsonfile")
    println System.getenv('PATH') 
  // writeFile inputFile: 'regressiontestresults.json', text: 'easy.'
