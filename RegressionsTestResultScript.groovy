@@ -1,8 +1,8 @@
 import groovy.json.JsonSlurper
 
-     println("Before creating a jsonfile");
+     println("Before creating a jsonfile")
     def inputFile = new File("\regressiontestresults.json")
-    println("After creating a jsonfile");
+    println("After creating a jsonfile")
    println System.getenv('PATH') 
  // writeFile inputFile: 'regressiontestresults.json', text: 'easy.'
 def InputJSON = new JsonSlurper().parseText(inputFile.text)
@@ -67,11 +67,11 @@ markup.html {
      } //tbody
     } // table
    }
-      println("Before creating a html");
+      println("Before creating a html")
    def newFile = new File("/regressiontestresults.html")
-      println("After creating a html");
+      println("After creating a html")
    // writeFile newFile: 'regressiontestresults.html', text:  newFile.write(writer.toString())
      newFile.write(writer.toString())
-      println("After writing html to string");
+      println("After writing html to string")
 }
 return this
