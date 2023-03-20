@@ -1,5 +1,9 @@
 import groovy.json.JsonSlurper
+
+     println("Before creating a jsonfile");
     def inputFile = new File("\regressiontestresults.json")
+    println("After creating a jsonfile");
+   println System.getenv('PATH') 
  // writeFile inputFile: 'regressiontestresults.json', text: 'easy.'
 def InputJSON = new JsonSlurper().parseText(inputFile.text)
 def writer = new StringWriter() // html is written here by markup builder
