@@ -13,21 +13,18 @@ pipeline {
               //  exampleModule.greetMsg() 
             }
         }
-        // stage('Deploy') {
-        //     steps {
-        //         echo 'Deploying....'
-        //     }
-        // }
-        stage ('Check for existence of index.html') {
-    agent any # Could be a top-level directive or a stage level directive
-    steps {
+        stage('Check for existence of regressiontestresults.json') {
+             steps {
+                 echo 'Deploying....'
+             }
+             steps {
         script {
             if (fileExists('regressiontestresults.json')) {
                 echo "File regressiontestresults.json found!"
             }
         }
-    }
-}
+    }   
+         }
 
     }
 }
@@ -42,6 +39,6 @@ pipeline {
 //}
 node {
     def exampleModule = load "./RegressionsTestResultScript.groovy"
-    def regressionJsonLoading = load "./regressiontestresults.json"
+ //   def regressionJsonLoading = load "./regressiontestresults.json"
   //  exampleModule.convert()
    }
