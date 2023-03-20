@@ -13,18 +13,18 @@ pipeline {
               //  exampleModule.greetMsg() 
             }
         }
-        stage('Check for existence of regressiontestresults.json') {
-             steps {
-                 echo 'Deploying....'
-             }
-             steps {
-        script {
-            if (fileExists('regressiontestresults.json')) {
-                echo "File regressiontestresults.json found!"
-            }
-        }
-    }   
-         }
+    //     stage('Check for existence of regressiontestresults.json') {
+    //          steps {
+    //              echo 'Deploying....'
+    //          }
+    //          steps {
+    //     script {
+    //         if (fileExists('regressiontestresults.json')) {
+    //             echo "File regressiontestresults.json found!"
+    //         }
+    //     }
+    // }   
+    //      }
 
     }
 }
