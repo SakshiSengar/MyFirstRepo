@@ -67,8 +67,11 @@ markup.html {
      } //tbody
     } // table
    }
+      println("Before creating a html");
    def newFile = new File("/regressiontestresults.html")
+      println("After creating a html");
    // writeFile newFile: 'regressiontestresults.html', text:  newFile.write(writer.toString())
      newFile.write(writer.toString())
+      println("After writing html to string");
 }
 return this
