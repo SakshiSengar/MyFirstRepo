@@ -28,11 +28,11 @@ pipeline {
 
     }
 }
-//node {
+node {
    // def rootDir = PATH
-  //  def exampleModule = load "./pipeline.groovy"
-    //exampleModule.greetMsg()
-//}
+   def exampleModule = load "./pipeline.groovy"
+    exampleModule.greetMsg()
+}
 //node {
    // def rootDir = PATH
  //   def exampleModule = load "./TestScript.groovy"
