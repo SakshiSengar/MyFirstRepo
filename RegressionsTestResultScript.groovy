@@ -1,11 +1,20 @@
 import groovy.json.JsonSlurper
 
      println("Before creating a jsonfile")
-  //  def inputFile = new File("\regressiontestresults.json")
+  //  def inputFile = new File("\regressiontestresults.json")     //original 
 def inputFile = new File("\updatedregressiontestresults.json")
     println("After creating a jsonfile")
    println System.getenv('PATH') 
  // writeFile inputFile: 'regressiontestresults.json', text: 'easy.'
+
+
+                                                                       // read a json from groovy script as 
+def projectsregression = readJSON file: "${env.WORKSPACE}\\regressiontestresults.json"
+    println("regressiontestresults.json read success")
+def projectsupdatedregression = readJSON file: "${env.WORKSPACE}\\updatedregressiontestresults.json.json"
+    println("updatedregressiontestresults.json read success")
+
+
 def InputJSON = new JsonSlurper().parseText(inputFile.text)
 def writer = new StringWriter() // html is written here by markup builder
 def markup = new groovy.xml.MarkupBuilder(writer) // the builder
