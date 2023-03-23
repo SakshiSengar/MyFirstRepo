@@ -33,6 +33,11 @@ node {
    def exampleModule = load "./pipeline.groovy"
     exampleModule.greetMsg()
 }
+//node {   once report is converted to html, this node block to write html file into jenkins workspace shall be used
+//    writeFile file: 'groovy1.txt', text: 'Working with files the Groovy way is easy.'
+//    sh 'ls -l groovy1.txt'
+//    sh 'cat groovy1.txt'
+//}
 //node {
    // def rootDir = PATH
  //   def exampleModule = load "./TestScript.groovy"
