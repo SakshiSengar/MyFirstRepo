@@ -34,11 +34,11 @@ pipeline {
 
     }
 }
-node {
+//node {
    // def rootDir = PATH
-   def exampleModule = load "./pipeline.groovy"
-    exampleModule.greetMsg()
-}
+//   def exampleModule = load "./pipeline.groovy"
+//    exampleModule.greetMsg()
+//}
 //node {   once report is converted to html, this node block to write html file into jenkins workspace shall be used
 //    writeFile file: 'groovy1.txt', text: 'Working with files the Groovy way is easy.'
 //    sh 'ls -l groovy1.txt'
@@ -48,10 +48,10 @@ node {
    // def rootDir = PATH
  //   def exampleModule = load "./TestScript.groovy"
 //}
-//node {
+node {
 // def files = findFiles(glob: '**/*.json') echo """${files[0].name} ${files[0].path} ${files[0].directory} ${files[0].length} ${files[0].lastModified}"""
 //def projects = readJSON file: "${env.WORKSPACE}\\updatedregressiontestresults.json"
 //  def regressionJsonLoading = load "./updatedregressiontestresults.json"
-  // def exampleModule = load "./RegressionsTestResultScript.groovy"
+   def exampleModule = load "./RegressionsTestResultScript.groovy"
   //  exampleModule.convert()
-//   }
+  }
