@@ -13,6 +13,12 @@ pipeline {
               //  exampleModule.greetMsg() 
             }
         }
+         stage('Printing') {
+            steps {
+              def projectsregression = readJSON file: "${env.WORKSPACE}\\regressiontestresults.json"
+              echo 'regressiontestresults.json read success..'
+            }
+        }
     //     stage('Check for existence of regressiontestresults.json') {
     //          steps {
     //              echo 'Deploying....'
