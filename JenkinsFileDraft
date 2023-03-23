@@ -15,7 +15,7 @@ pipeline {
         }
          stage('Printing') {
             steps {
-              def projectsregression = readJSON file: "${env.WORKSPACE}\\regressiontestresults.json"
+            //  def projectsregression = readJSON file: "${env.WORKSPACE}\\regressiontestresults.json" // giving compilation error
               echo 'regressiontestresults.json read success..'
             }
         }
